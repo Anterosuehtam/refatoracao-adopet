@@ -25,6 +25,9 @@ public class Pet {
         this.peso = peso;
     }
 
+    public Pet() {
+    }
+
     public Long getId() {
         return id;
     }
@@ -44,4 +47,8 @@ public class Pet {
     public int getIdade() {
         return idade;
     }
+
+    public String getCor() {return cor;}
+
+    public Float getPeso() {return peso;}
 }
