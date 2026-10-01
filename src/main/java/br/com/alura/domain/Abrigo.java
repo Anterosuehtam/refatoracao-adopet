@@ -25,6 +25,8 @@ public class Abrigo {
         return id;
     }
 
+    public void setId(long id) {}
+
     public String getNome() {
         return nome;
     }
@@ -34,4 +36,11 @@ public class Abrigo {
     public String getEmail() {return email;}
 
     public Pet[] getPets() {return pets;}
+
+    @Override
+    public String toString() {
+        return """
+                     "id":%s,"nome":"%s","telefone":"%s","email":"%s"
+                     """.formatted(this.id, this.nome, this.telefone, this.email);
+    }
 }
